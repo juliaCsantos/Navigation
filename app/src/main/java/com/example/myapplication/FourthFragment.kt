@@ -7,16 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 
-class SecondFragment : Fragment() {
+class FourthFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_second, container, false)
+        val view = inflater.inflate(R.layout.fragment_fourth, container, false)
 
-        view.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_secondFragment_to_fourthFragment) }
+        view.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_fourthFragment_to_sixthFragment)}
 
         return view
     }
