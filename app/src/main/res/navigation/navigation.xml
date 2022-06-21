@@ -57,5 +57,9 @@
         android:id="@+id/sixthFragment"
         android:name="com.example.myapplication.SixthFragment"
         android:label="fragment_sixth"
-        tools:layout="@layout/fragment_sixth" />
+        tools:layout="@layout/fragment_sixth" >
+        <action
+            android:id="@+id/action_sixthFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
 </navigation>
